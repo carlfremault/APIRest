@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^$ chocolatein.php
+RewriteRule ^([a-zA-Z]+)$ chocolatein.php?table=$1
+RewriteRule ^([a-zA-Z]+)/([0-9]+)$ chocolatein.php?table=$1&id=$2
+RewriteRule ^([a-zA-Z]+)/({.*})$ chocolatein.php?table=$1&contenu=$2
+RewriteRule ^([a-zA-Z]+)/([0-9]+)/({.*})$ chocolatein.php?table=$1&id=$2&contenu=$3
